@@ -10,4 +10,15 @@ $(document).ready(function(){
         return false;
     });
 
+    $("#input-name").blur(function(){
+        var value = $(this).val();
+
+        $("#returned-text").load('check-system.php', {
+            'value': value,
+            'type': 1
+        });
+
+        return false;
+    });
+
 });

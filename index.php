@@ -5,7 +5,7 @@
 <body>
 
     <form>
-        <p>Please select a name:</p>
+        <p>Please select a name: (select action)</p>
         <select name="name" id="select">
             <option>Select a name</option>
             <option value="1">Leonardo Rifeli</option>
@@ -16,6 +16,17 @@
 
         <div>
             <p id="returned"></p>
+        </div>
+    </form>
+
+    <form>
+        <p>Please insert your name: (input text action)</p>
+        <input type="text" id="input-name" name="name" placeholder="Insert your name" />
+
+        <br/>
+
+        <div>
+            <p id="returned-text"></p>
         </div>
     </form>
 
